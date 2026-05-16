@@ -5,13 +5,13 @@ public class Validade {
     private double descontoBaixo = 0.25;
     private double descontoAlto = 0.50;
 
-    public String aplicarDescontoValidade(Perecivel... peresivel) {
+    public String aplicarDescontoValidade(ProdutoPercivel... peresivel) {
 
         String resultado = "";
 
-        for (Perecivel p : peresivel) {
+        for (ProdutoPercivel p : peresivel) {
 
-            double valorOriginal = p.getValor();
+            double valorOriginal = p.getPreco();
             double novoValor = valorOriginal;
 
             if (p.getDiasParaVencer() <= 0) {
@@ -29,7 +29,7 @@ public class Validade {
                     novoValor = valorOriginal * 0.80;
                 }
 
-                p.setValor(novoValor);
+                p.setPreco(novoValor);
 
                 resultado += "\nProduto " + p.getNome() +
                         " atualizado de R$ " + valorOriginal +

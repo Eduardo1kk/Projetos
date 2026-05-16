@@ -1,22 +1,22 @@
 package Dominio;
 
 public class Produto {
+
     private String nome;
     private int plu;
     private int quantidade;
-    private double valor;
-    private int diasParaVencer;
-
+    private double preco;
 
 
     //Aqui eu crio um contrutor para facilitar a passagem de dados e para não quebrar o cod da galera
-    public Produto(String nome, int plu, double valor,int diasParaVencer,int quantidade) {
+    public Produto(String nome, int plu, double preco,int quantidade) {
         this.nome = nome;
         this.plu = plu;
-        setValor(valor);
-        this.diasParaVencer = diasParaVencer;
+        setPreco(preco);
+
         setQuantidade(quantidade);
     }
+
     public String getNome() {
         return nome;
     }
@@ -40,17 +40,11 @@ public class Produto {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade < 0 ? 0 : quantidade;
     }
-    public double getValor() {
-        return valor;
-    }
-    public void setValor(double valor) {
-        this.valor = valor < 0 ? 0 : valor;
-    }
-    public int getDiasParaVencer() {
-        return diasParaVencer;
-    }
 
-    public void setDiasParaVencer(int diasParaVencer) {
-        this.diasParaVencer = diasParaVencer;
+    public double getPreco() {
+        return preco;
+    }
+    public void setPreco(double valor) {
+        this.preco = valor < 0 ? 0 : valor;
     }
 }
