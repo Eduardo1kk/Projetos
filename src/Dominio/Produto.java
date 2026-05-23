@@ -45,6 +45,6 @@ public class Produto {
         return preco;
     }
     public void setPreco(double valor) {
-        this.preco = valor < 0 ? 0 : valor;
+        this.preco = preco < 0 ? 0 : preco;
     }
 }

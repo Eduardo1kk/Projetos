@@ -25,10 +25,11 @@ public class ProdutoTeste {
 
             System.out.print("Escolha uma opção: ");
             int tipo = scanner.nextInt();
-
             scanner.nextLine(); // Limpa o enter
 
-            if (tipo < 1 || tipo > 3) { // Se for menor que 1 OU maior que 3
+            TipoProduto tipoProduto = TipoProduto.ProdutoCadastrado(tipo);
+
+            if (tipoProduto == null) {
                 System.out.println("Opção Inválida!");
                 continue;
             }
@@ -50,13 +51,13 @@ public class ProdutoTeste {
 
             scanner.nextLine(); // Limpa o enter
 
-           if (tipo == 1) {
+           if (tipoProduto == TipoProduto.PRODUTO_NAO_PERECIVEL) {
                 System.out.print("Corredor: ");
                 String corredor = scanner.nextLine();
                 ProdutoNaoPerecivel pnp = new ProdutoNaoPerecivel(nome, codigo, preco, qtd, corredor);
                 listaDeProdutos.add(pnp);
                 System.out.println("Produto Não Perecível adicionado!");
-            } else if (tipo == 2) {
+            } else if (tipoProduto == TipoProduto.PRODUTO_PERECIVEL_FRIO) {
                 System.out.print("Dias para vencer: ");
                 int vld = scanner.nextInt();
                 scanner.nextLine();
