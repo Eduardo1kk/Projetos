@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099dbfce-7890-464d-bdb6-d225846f3a14" name="Changes" comment="Refatoração do sistema de estoque aplicando herança, polimorfismo, listas dinâmicas, regras de negócio e melhoria na organização do código.">
-      <change afterPath="$PROJECT_DIR$/src/Dominio/TipoProduto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2026_16_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2026_16_02_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2026_16_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2026_16_02__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/GestaoDeEstoque.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Dominio/CalculadorEstoque.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Dominio/Perecivel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Dominio/Persivel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Dominio/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Dominio/Validade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestaoDeEstoque/src/Teste/ProdutoTeste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Dominio/CalculadorEstoque.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Dominio/Produto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Dominio/ProdutoNaoPerecivel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Dominio/ProdutoPercivel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Dominio/Validade.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/production/GestaoDeEstoque/Teste/ProdutoTeste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dominio/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dominio/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Teste/ProdutoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Teste/ProdutoTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
