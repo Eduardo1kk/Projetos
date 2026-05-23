@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="099dbfce-7890-464d-bdb6-d225846f3a14" name="Changes" comment="Refatoração do sistema de estoque aplicando herança, polimorfismo, listas dinâmicas, regras de negócio e melhoria na organização do código.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Teste/ProdutoTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Teste/ProdutoTeste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
