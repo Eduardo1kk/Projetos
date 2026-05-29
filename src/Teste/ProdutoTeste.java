@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 import Dominio.*;
 
-import java.util.Locale;
-
 import java.util.Scanner;
 
 public class ProdutoTeste {
@@ -43,13 +41,16 @@ public class ProdutoTeste {
 
             System.out.print("Código: ");
             int codigo = scanner.nextInt();
+            scanner.nextLine();
 
             System.out.print("Preço: ");
             double preco = scanner.nextDouble();
+            scanner.nextLine();
 
 
             System.out.print("Quantidade: ");
             int qtd = scanner.nextInt();
+            scanner.nextLine();
 
             scanner.nextLine(); // Limpa o enter
 
@@ -63,7 +64,7 @@ public class ProdutoTeste {
                 System.out.print("Dias para vencer: ");
                 int vld = scanner.nextInt();
                 scanner.nextLine();
-                ProdutoPercivel pfrio = new ProdutoPercivel(nome, codigo, preco, qtd, vld);
+                ProdutoPerecivel pfrio = new ProdutoPerecivel(nome, codigo, preco, qtd, vld);
                 listaDeProdutos.add(pfrio);
                 System.out.println("Produto frio adicionado!");
 
@@ -71,7 +72,7 @@ public class ProdutoTeste {
                 System.out.print("Dias para vencer: ");
                 int vld = scanner.nextInt();
                 scanner.nextLine();
-                ProdutoPercivel p = new ProdutoPercivel(nome, codigo, preco, qtd, vld);
+                ProdutoPerecivel p = new ProdutoPerecivel(nome, codigo, preco, qtd, vld);
                 listaDeProdutos.add(p);
                 System.out.println("Produto Comum adicionado!");
             }
@@ -92,18 +93,18 @@ public class ProdutoTeste {
         Validade validador = new Validade();
 
         // 2. Cria uma lista temporária só para os perecíveis
-        ArrayList<ProdutoPercivel> apenasPereciveis = new ArrayList<>();
+        ArrayList<ProdutoPerecivel> apenasPereciveis = new ArrayList<>();
 
         // 3. Varre a lista principal procurando quem é Perecível
         for (Produto prod : listaDeProdutos) {
-            if (prod instanceof ProdutoPercivel) {
-                // O (ProdutoPercivel) antes faz o "Cast" (converte o tipo para o Java aceitar)
-                apenasPereciveis.add((ProdutoPercivel) prod);
+            if (prod instanceof ProdutoPerecivel) {
+                // O (ProdutoPercivel) antes faz o  (converte o tipo para o Java aceitar)
+                apenasPereciveis.add((ProdutoPerecivel) prod);
             }
         }
 
-        // 4. A MÁGICA: Passa a lista filtrada convertendo para Array para o seu VarArgs
-        String relatorioDescontos = validador.aplicarDescontoValidade(apenasPereciveis.toArray(new ProdutoPercivel[0]));
+        // 4. Passa a lista filtrada convertendo para Array para o seu VarArgs
+        String relatorioDescontos = validador.aplicarDescontoValidade(apenasPereciveis.toArray(new ProdutoPerecivel[0]));
 
         // 5. Imprime o resultado que a sua classe gerou
         System.out.println("\n=== ATUALIZAÇÃO DE VALIDADE ===");

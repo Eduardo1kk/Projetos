@@ -16,6 +16,11 @@ public class ProdutoNaoPerecivel extends  Produto {
 
     }
 
+    @Override
+    public void calculaDesconto() {
+
+    }
+
     public String getCorredor() {
         return corredor;
     }
@@ -23,4 +28,6 @@ public class ProdutoNaoPerecivel extends  Produto {
     public void setCorredor(String corredor) {
         this.corredor = corredor;
     }
+
+
 }

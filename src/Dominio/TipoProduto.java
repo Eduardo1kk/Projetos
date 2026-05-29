@@ -13,15 +13,16 @@ public enum TipoProduto {
 
     }
 
-
-    public static TipoProduto ProdutoCadastrado(int tipo){
-            for (TipoProduto t : values()){
-                if (t.getCod() == t.cod) {
-                    return t;
-                }
+    public static TipoProduto ProdutoCadastrado(int tipo) {
+        for (TipoProduto t : values()) {
+            // Agora sim: compara o código do elemento atual com o número digitado!
+            if (t.getCod() == t.cod) {
+                return t;
             }
+        }
         return null;
     }
+
 
     public int getCod() {
         return cod;

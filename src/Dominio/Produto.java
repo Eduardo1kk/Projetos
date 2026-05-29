@@ -1,6 +1,6 @@
 package Dominio;
 
-public class Produto {
+public abstract class Produto {
 
     private String nome;
     private int plu;
@@ -8,14 +8,15 @@ public class Produto {
     private double preco;
 
 
-    //Aqui eu crio um contrutor para facilitar a passagem de dados e para não quebrar o cod da galera
+
     public Produto(String nome, int plu, double preco,int quantidade) {
         this.nome = nome;
         this.plu = plu;
         setPreco(preco);
-
         setQuantidade(quantidade);
     }
+
+    public abstract void calculaDesconto();
 
     public String getNome() {
         return nome;
