@@ -133,21 +133,21 @@ public class ProdutoTeste {
        //validade
         Validade validador = new Validade();
 
-        // 2. Cria uma lista temporária só para os perecíveis
+        //  Cria uma lista temporária só para os perecíveis
         ArrayList<ProdutoPerecivel> apenasPereciveis = new ArrayList<>();
 
-        // 3. Varre a lista principal procurando quem é Perecível
+        //  Varre a lista principal procurando quem é Perecível
         for (Produto prod : listaDeProdutos) {
             if (prod instanceof ProdutoPerecivel) {
-                // O (ProdutoPercivel) antes faz o  (converte o tipo para o Java aceitar)
+
                 apenasPereciveis.add((ProdutoPerecivel) prod);
             }
         }
 
-        // 4. Passa a lista filtrada convertendo para Array para o seu VarArgs
+        //  Passa a lista filtrada convertendo para Array para VarArgs
         String relatorioDescontos = validador.aplicarDescontoValidade(apenasPereciveis.toArray(new ProdutoPerecivel[0]));
 
-        // 5. Imprime o resultado que a sua classe gerou
+        //  Imprime o resultado que a sua classe gerou
         System.out.println("\n=== ATUALIZAÇÃO DE VALIDADE ===");
         if (relatorioDescontos.isEmpty()) {
             System.out.println("Nenhum produto precisou de desconto ou recolhimento.");
@@ -161,7 +161,7 @@ public class ProdutoTeste {
         // Esse 'new Produto[0]' é apenas uma instrução para o Java saber o tipo do array
         calculador.calculadora(listaDeProdutos.toArray(new Produto[0]));
 
-        // 3. Pega o resultado guardado na sua classe
+        //  Pega o resultado guardado na sua classe
         System.out.println("\n=== RELATÓRIO DO CALCULADOR ===");
         System.out.printf("Faturamento Total do Estoque: R$ %.2f\n", calculador.getFaturamento());
 

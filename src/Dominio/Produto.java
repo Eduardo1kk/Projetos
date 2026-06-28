@@ -6,6 +6,7 @@ public abstract class  Produto {
     private int plu;
     private int quantidade;
     private double preco;
+    private Integer diasParaVencer;
 
 
 
@@ -14,6 +15,11 @@ public abstract class  Produto {
         this.plu = plu;
         setPreco(preco);
         setQuantidade(quantidade);
+    }
+
+    public Produto(String nome, int plu, double preco,int quantidade,Integer diasParaVencer){
+        this(nome,plu,preco,quantidade);
+        this.diasParaVencer = diasParaVencer;
     }
 
     public abstract void calculaDesconto();
@@ -52,5 +58,13 @@ public abstract class  Produto {
             throw new IllegalArgumentException("Valor invalido!");
         }
         this.preco = preco;
+    }
+
+    public int getDiasParaVencer() {
+        return diasParaVencer;
+    }
+
+    public void setDiasParaVencer(int diasParaVencer) {
+        this.diasParaVencer = diasParaVencer;
     }
 }

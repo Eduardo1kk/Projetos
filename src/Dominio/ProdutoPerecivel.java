@@ -1,20 +1,18 @@
 package Dominio;
 
 public class ProdutoPerecivel extends Produto {
-    private int diasParaVencer;
 
-    public ProdutoPerecivel(String nome, int plu, double valor, int quantidade , int diasParaVencer) {
-        super(nome, plu, valor, quantidade);
-        this.diasParaVencer = diasParaVencer;
 
+    public ProdutoPerecivel(String nome, int plu, double valor, int quantidade , Integer diasParaVencer) {
+        super(nome, plu, valor, quantidade,diasParaVencer);
     }
 
     @Override
     public void calculaDesconto() {
-        if (this.diasParaVencer <= 0) {
+        if (getDiasParaVencer() <= 0) {
             return;
         }
-        if (this.diasParaVencer <= 5) {
+        if (getDiasParaVencer() <= 5) {
             if (this.getQuantidade() >= 60) {
                 double preco = this.getPreco() * 0.50;
                 this.setPreco(preco);  // Desconto Alto
@@ -27,14 +25,4 @@ public class ProdutoPerecivel extends Produto {
             }
         }
     }
-
-    public int getDiasParaVencer() {
-        return diasParaVencer;
-    }
-
-    public void setDiasParaVencer(int diasParaVencer) {
-        this.diasParaVencer = diasParaVencer;
-    }
-
-
 }
